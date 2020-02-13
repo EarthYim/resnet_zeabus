@@ -30,11 +30,11 @@ while True:
         
         #score needs to be calibrating for finer results 
         #red flare performed the poorest >> less score
-        if int(label) == 2:
+        if int(label) == 2 or int(label) == 1 :
             continue
         
         #raise score for more accurate labels
-        elif score < 0.85:
+        elif score < 0.95:
             continue
         
         #plotting reactangle and label
